@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carol Blue</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f5f0;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #f7e9d7;
+            color: #5a4a3a;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        /* Banner promocional */
+        .banner {
+            background-color: #ffe5c2;
+            color: #5a4a3a;
+            width: 100%;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .banner span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #d87c37;
+        }
+
+        .banner .small-text {
+            display: block;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        /* Iconos navideños */
+        .banner .icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+        }
+
+        .banner .icon.left {
+            left: 10px;
+        }
+
+        .banner .icon.right {
+            right: 10px;
+        }
+
+        
+
+        /* Sección de productos */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        /* Tarjeta de producto */
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contenedor de imagen */
+        .product .image-container {
+            width: 150px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Botón de compra */
+        .buy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <!-- Encabezado -->
+    <header>
+        Carol Blue
+    </header>
+
+    <!-- Banner promocional -->
+    <div class="banner">
+        <img src="https://i.imgur.com/LYEqN81.png" class="icon left" alt="Icono navideño izquierdo">
+        ¡Black Friday! <span>20% de descuento</span> en todos los productos. 
+        <span class="small-text">¡Aprovecha antes del 30 de noviembre!</span>
+        <img src="https://i.imgur.com/oYtMWID.png" class="icon right" alt="Icono navideño derecho">
+    </div>
+
+    <!-- Sección de productos -->
+    <section class="products">
+        <!-- Producto 1 -->
+        <div class="product">
+            <div class="image-container">
+                <img src="https://i.imgur.com/PRdIIxV.jpeg" alt="Brasier media copa">
+            </div>
+            <h3>Brasier media copa</h3>
+            <p>Descripción breve del producto 1.</p>
+            <a href="#" class="buy-button" onclick="redirectToWhatsApp('Brasier media copa')">Comprar ahora</a>
+        </div>
+        <!-- Producto 2 -->
+        <div class="product">
+            <div class="image-container">
+                <img src="https://i.imgur.com/qm9qoVM.jpeg" alt="Cacheteros de algodón con detalles en encaje">
+            </div>
+            <h3>Cacheteros de algodón con detalles en encaje</h3>
+            <p>Descripción breve del producto 2.</p>
+            <a href="#" class="buy-button" onclick="redirectToWhatsApp('Cacheteros de algodón con detalles en encaje')">Comprar ahora</a>
+        </div>
+        <!-- Producto 3 -->
+        <div class="product">
+            <div class="image-container">
+                <img src="https://i.imgur.com/z9GfVGz.jpeg" alt="Tops de algodón">
+            </div>
+            <h3>Tops de algodón</h3>
+            <p>Descripción breve del producto 3.</p>
+            <a href="#" class="buy-button" onclick="redirectToWhatsApp('Tops de algodón')">Comprar ahora</a>
+        </div>
+        <!-- Producto 4 -->
+        <div class="product">
+            <div class="image-container">
+                <img src="https://i.imgur.com/qSOvbMD.jpeg" alt="Tops sin costura">
+            </div>
+            <h3>Tops sin costura</h3>
+            <p>Descripción breve del producto 4.</p>
+            <a href="#" class="buy-button" onclick="redirectToWhatsApp('Tops sin costura')">Comprar ahora</a>
+        </div>
+        <!-- Producto 5 -->
+        <div class="product">
+            <div class="image-container">
+                <img src="https://i.imgur.com/T9Eho8C.jpeg" alt="Trusa corte bikini con detalles en encaje">
+            </div>
+            <h3>Trusa corte bikini con detalles en encaje</h3>
+            <p>Descripción breve del producto 5.</p>
+            <a href="#" class="buy-button" onclick="redirectToWhatsApp('Trusa corte bikini con detalles en encaje')">Comprar ahora</a>
+        </div>
+    </section>
+
+    <!-- JavaScript para redireccionar a WhatsApp -->
+    <script>
+        function redirectToWhatsApp(productName) {
+            const phoneNumber = "51993101662"; // Reemplaza con tu número de WhatsApp
+            const message = `Hola 👋, estoy interesado en ${productName} de Carol Blue 💙. ¡Me encantaría saber más detalles! ¿Podrías ayudarme a realizar la compra? 🛍️✨`;
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>
